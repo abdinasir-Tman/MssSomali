@@ -1,0 +1,33 @@
+@use "../../variables.scss" as mixin;
+.voting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: mixin.$primaryTextColor;
+  margin: mixin.$spaceY;
+  h1 {
+    font-size: mixin.$headingFontSize;
+    font-weight: 700;
+  }
+  .timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .digit_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .digit {
+      font-size: 10rem;
+      font-weight: 800;
+    }
+    .text {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}

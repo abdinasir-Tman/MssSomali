@@ -1,0 +1,29 @@
+@use "../../variables.scss" as mixin;
+.competitors_container {
+  .competitors_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: mixin.$primaryTextColor;
+    margin: mixin.$spaceY;
+    span {
+      font-size: mixin.$headingFontSize;
+      margin: 2px 0;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      width: mixin.$tapletBreakPoint;
+      text-align: center;
+      color: mixin.$secondaryTextColor;
+      word-wrap: break-word;
+      margin-bottom: 20px;
+    }
+  }
+  .competitors {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
